@@ -1,0 +1,22 @@
+{
+    "name": "userstamps/laravel",
+    "description": "Automatically add created_by, updated_by, and deleted_by fields to your models",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "UserStamps\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^6.0|^7.0|^8.0|^9.0|^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UserStamps\\UserStampsServiceProvider"
+            ]
+        }
+    }
+}
